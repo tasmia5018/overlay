@@ -1,0 +1,62 @@
+.title{
+	font-family: sans-serif;
+	color: #dc2d5e;
+}
+.container{
+	position: relative;
+	width:200px;
+	height:200px; 
+	display:inline-block;
+}
+.image{
+	display:block; 
+	width:200px;
+	height:200px; 
+}
+.overlay{
+	position: absolute;
+	transition:all. 3s ease;
+	opacity: 0;
+	background-color:#eee;
+}
+.container:hover .overlay{
+	opacity: 1;
+}
+
+.text{
+	font-family:sans-serif; 
+	font-size:20px;
+	color:white;
+	position: absolute;
+	top:50%;
+	left:50% 
+	transform:translate(-50%,-50%);
+}
+.overlayleft{
+	height: 100%;
+	width: 0;
+	top:0;
+	left: 0;
+	background-color:#00b1ba; 
+}
+.overlayright{
+	height: 100%;
+	width: 0;
+	top:0;
+	right: 0;
+	background-color:blue;
+
+}
+.container:hover .overlayleft, .container:hover .overlayright{
+	width: 100%;
+
+}
+.overlayfade{
+	height: 100%;
+	width: 0;
+	top:0;
+	right: 0;
+	background-color:green;
+}
+.container:hover .overlayfade{
+	width:100%;
